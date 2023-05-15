@@ -1,6 +1,6 @@
 # Frontend Mentor - REST Countries API with color theme switcher
 
-> *This project is aimed at refreshening my React, chakra UI and TypeScript skills. I would be building the react version as well using TypeScript && chakra UI*
+> *This project is aimed at refreshening my React, chakra UI and TypeScript skills. I would be building the vanilla version as well using Html, css and JS*
 
 ![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)
 
