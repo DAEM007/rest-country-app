@@ -6,7 +6,6 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 
-
 const NavBar = () => {
     return (
         <Flex 
@@ -21,7 +20,7 @@ const NavBar = () => {
             <Box>
                 <Text>Where in the world?</Text>
             </Box>
-            <Flex alignItems="center">
+            <Flex alignItems="center" cursor="pointer">
                 <FontAwesomeIcon icon={faMoon} size="sm" />
                 <Text ml="10px" fontSize={{ base: '11px', md: '18px', lg: '22px' }}>Dark Mode</Text>
             </Flex>
