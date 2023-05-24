@@ -2,15 +2,13 @@ import {
     Box,
     Card,
     Flex,
-    Heading,
-    Image,
     SimpleGrid,
-    Text,
 } from "@chakra-ui/react";
 import SearchBar from "../../components/SearchBar";
 import SelectBar from "../../components/SelectBar";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import CardInner from "../../components/CardInner";
 
 const Home = () => {
     const [countries, setCountries] = useState<any[]>([]);
@@ -50,28 +48,7 @@ const Home = () => {
                     <Card
                         key={index}
                     >
-                        <Box>
-                            <Image 
-                                src={country.flags.png}
-                                alt={country.flags.alt}
-                                width="100%"
-                                height="150px"
-                                objectFit="cover"
-                            />
-                        </Box>
-                        <Box
-                            p="30px"
-                            textTransform="capitalize"
-                        >
-                            <Heading 
-                                size="md"
-                                textAlign="center"
-                            >{ country.name.common }</Heading>
-                            <Text>population:</Text>
-                            <Text>region:</Text>
-                            <Text>capital:</Text>
-                        </Box>
-                        
+                        <CardInner country={country}/>
                     </Card>
                 )) }
 
