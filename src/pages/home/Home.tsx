@@ -2,8 +2,10 @@ import {
     Box,
     Card,
     Flex,
+    Heading,
     Image,
     SimpleGrid,
+    Text,
 } from "@chakra-ui/react";
 import SearchBar from "../../components/SearchBar";
 import SelectBar from "../../components/SelectBar";
@@ -52,10 +54,29 @@ const Home = () => {
                             <Image 
                                 src={country.flags.png}
                                 alt={country.flags.alt}
+                                width="100%"
+                                height="150px"
+                                objectFit="cover"
                             />
                         </Box>
+                        <Box
+                            p="30px"
+                            textTransform="capitalize"
+                        >
+                            <Heading 
+                                size="md"
+                                textAlign="center"
+                            >{ country.name.common }</Heading>
+                            <Text>population:</Text>
+                            <Text>region:</Text>
+                            <Text>capital:</Text>
+                        </Box>
+                        
                     </Card>
                 )) }
+
+                { error && <Box>{ error }</Box> }
+
             </SimpleGrid>
 
         </Box>
