@@ -1,0 +1,6 @@
+
+/* style for the option element inside the select element */
+.option {
+    width: 200px;
+    font-weight: 500;
+}
