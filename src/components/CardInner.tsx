@@ -6,7 +6,7 @@ import {
     Text,
 } from "@chakra-ui/react";
 
-const CardInner = ({ country } : any) => {
+const CardInner = ({ country }: any) => {
     return (
         <>
             <Box>
@@ -51,7 +51,7 @@ const CardInner = ({ country } : any) => {
                         color="gray.500"
                         fontWeight="normal"
                     >
-                        { country.capital ? country.capital: country.name.common }
+                        { country.capital ? country.capital : country.name.common }
                     </Text>
                 </Flex>
             </Box>
